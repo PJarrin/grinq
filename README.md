@@ -161,9 +161,10 @@ For a complete list of options: grinq_make_qc.py --help
  
 ```
 
-*<p><strong>Example of QC — <code>sum/glps_2020_G_sum.dat</code>:</strong></p>
+**Example of QC — `sum/glps_2020_G_sum.dat`:**
 
-<p><img src="./images/glps_2020_G_sum.jpg" alt="Quality statistics example" width="450"></p>
+<img src="./images/glps_2020_G_sum.jpg" alt="Quality statistics example" width="450">
+
 
 
 
