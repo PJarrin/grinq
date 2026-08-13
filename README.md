@@ -1,4 +1,10 @@
-# Package
+# GRINQ
+
+[![Python](https://img.shields.io/badge/Python-3.11%2B-blue)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+---
+
+GNSS RINEX INgestion & Quality control
 
 **GRINQ** is a python toolbox for retrieving GNSS data from numerous data holdings. It also generates
 a subset of metrics for quality control. 
@@ -166,6 +172,9 @@ For a complete list of options: grinq_make_qc.py --help
 <img src="./images/glps_2020_G_sum.jpg" alt="Quality statistics example" width="450">
 
 
+## Reporting issues
+
+Bug reports and enhancement requests are welcome. Please use the GitHub Issues page.
 
 
 ## Version History
