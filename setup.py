@@ -15,7 +15,7 @@ setup(
     description=DESCRIPTION,
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url='',
+    url="https://github.com/PJarrin/grinq",
     author='Paul Jarrin (Geoazur, IRD, CNRS, France)',
     author_email='paul.jarrin@geoazur.unice.fr',
     packages=find_packages(),
