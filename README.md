@@ -160,8 +160,11 @@ grinq_make_qc.py -nav brdc -rnx rinex -plots
 For a complete list of options: grinq_make_qc.py --help
  
 ```
-Example of QC_sum/glps_2020_G_sum.dat:
-<img alt="Quality statistics example" src="images/glps_2020_G_sum.jpg" width="450"/>
+
+*<p><strong>Example of QC — <code>sum/glps_2020_G_sum.dat</code>:</strong></p>
+
+<p><img src="./images/glps_2020_G_sum.jpg" alt="Quality statistics example" width="450"></p>
+
 
 
 ## Version History
