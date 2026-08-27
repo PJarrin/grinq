@@ -31,7 +31,7 @@ setup(
              'grinq/scripts/grinq_make_qc.py'],
     classifiers=[
         'Development Status :: 3 - Alpha',
-        'Intended Audience :: Developers',
+        'Intended Audience :: Science/Research',
         'Topic :: Software Development :: Build Tools',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.11',
