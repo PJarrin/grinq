@@ -1,13 +1,24 @@
-# GRINQ
+
+# GRINQ - GNSS RINEX Ingestion and Quality Control
 
 [![Python](https://img.shields.io/badge/Python-3.11%2B-blue)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+
 ---
 
-GNSS RINEX INgestion & Quality control
+**GRINQ** is an open-source python toolbox for retrieving, mirroring GNSS rinex data from numerous data holdings. It also generates a subset of metrics for quality control (QC). 
 
-**GRINQ** is a python toolbox for retrieving GNSS data from numerous data holdings. It also generates
-a subset of metrics for quality control. 
+
+## Main features
+
+- GNSS RINEX data retrieval
+- RINEX data mirroring and synchronization
+- GNSS station data management
+- RINEX quality control and statistics
+- Integration with GNSS data repositories
+- Command-line tools for automated GNSS data processing
+- Python-based scientific computing workflows
+
 
 ## Package Installation:
 
@@ -20,10 +31,11 @@ with other Python packages.
 conda create -n grinq python=3.11
 conda activate grinq
 python -m pip install --upgrade pip
-pip install git+https://github.com/.../grinq.git
+pip install git+https://github.com/PJarrin/grinq.git
+
 ```
 
-If you have downloaded a GRINQ source distribution (.tar.gz), it can be installed with:
+If you have downloaded a GRINQ source distribution (.tar.gz / .zip), it can be installed with:
 ```
 pip install grinq-XXX.tar.gz
 ```
@@ -114,6 +126,7 @@ To retrieve RINEX data using mirroring implementation:
 - Clone a specific directory within ftp server
   
   grinq_ftp_mirror_sync.py -user 'anonymous' -passw 'anonymous' -url 'ftp://rgpdata.ign.fr' -ldir /data/../Rinex -rdir '/pub/data/2026/001' -custom 'data_30'
+  
   -- Using lftp at: /usr/bin/lftp
   [2024-08-13 10:22:09] |Info| Making directory `data_30'
   [2024-08-13 10:22:09] |Info| Transferring file `data_30/aaer0010.26d.Z'
@@ -147,7 +160,7 @@ Rinex                       brdc
 └── glps0010.20d.Z          └── BRDC00IGS_R_20200010000_01D_MN.rnx.gz
 └── glps0020.20d.Z          └── BRDC00IGS_R_20200020000_01D_MN.rnx.gz
 └── glps0030.20d.Z          └── BRDC00IGS_R_20200030000_01D_MN.rnx.gz
-..                          ..
+...                         ...
 
 grinq_make_qc.py -nav brdc -rnx rinex -plots
 
@@ -155,14 +168,24 @@ grinq_make_qc.py -nav brdc -rnx rinex -plots
     - glps0010.20o quality check: ok
     - glps0020.20o quality check: ok
     - glps0030.20o quality check: ok
-    ..
+    ...
  -- Quality check metrics done
  -- Making QC summary
  -- Written: QC_sum/glps_2020_total_sum.dat
  -- Written: QC_sum/glps_2020_G_sum.dat
  -- Written: QC_sum/glps_2020_E_sum.dat
  -- Written: QC_sum/glps_2020_R_sum.dat
+
+
+ Output:
  
+    QC                       QC_sum 
+    └── 2020                    ├── glps_2020_G_sum.dat
+        ├── glps0010.xtr        ├── glps_2020_R_sum.dat
+        ├── glps0020.xtr        ├── glps_2020_E_sum.dat
+        ...                     ├── glps_2020_G_sum.jpg
+                                ...
+
 For a complete list of options: grinq_make_qc.py --help
  
 ```
@@ -183,7 +206,18 @@ See the [Change Log](CHANGELOG.md) for detailed updates.
 
 
 ## Citation
-If you use GRINQ, please cite:
+
+If you use GRINQ in your research, please cite the software:
+
+Jarrin, P. (2026). GRINQ: GNSS RINEX Ingestion and Quality Control. Zenodo.
+DOI: [XXXXXX]
+
+
+## Scientific applications
+
+The following publications are related to the development and/or
+application of GRINQ:
+
 
 **Jarrin P.**, Nocquet J.-M., Rolandone F., Audin L., Mora-Páez H., 
 et al. (2023). Continental block motion in the Northern Andes from GPS
@@ -193,6 +227,22 @@ measurements. Geophysical Journal International, 235(2), 1434–1464.
 Vidal, M., **Jarrin, P.**, Rolland, L., Nocquet, J.-M., Vergnolle, M., Sakic, P. (2024). Cost-
 Efficient Multi-GNSS Station with Real-Time Transmission for Geodynamics
 Applications. Remote Sensing 16(6). [doi:10.3390](https://doi.org/10.3390/rs16060991)
+
+## Acknowledgement
+
+GRINQ uses G-Nut/Anubis to perform RINEX quality-control analysis and
+automates its execution as part of the GRINQ workflow. Anubis was
+originally developed by other authors, whose work we gratefully
+acknowledge.
+
+Users who make use of the RINEX quality-control functionality are
+encouraged to cite the original Anubis publication
+
+
+Václavovic P. and Douša J. (2016)
+G-Nut/Anubis - open-source tool for multi-GNSS data monitoring
+IAG Symposia Series, Springer, Vol. 143, pp. 775-782, doi:10.1007/1345_2015_157 
+
 
 ## Authors
 GRINQ has been implemented by **[Paul Jarrin][orcid_pj]** and uses time
