@@ -10,7 +10,7 @@ authors:
 
 orcid: "https://orcid.org/0000-0001-9874-1330"
 
-version: "0.0.1"
+version: "0.1.0"
 date-released: "2026-08-27"
 
 repository-code: "https://github.com/PJarrin/grinq"
@@ -29,6 +29,12 @@ keywords:
   - scientific computing
 
 abstract: >
-  GRINQ is an open-source Python toolbox for GNSS RINEX data
-  retrieval, ingestion, mirroring, and quality control.
+  The increase of GNSS observations worldwide creates new opportunities for large-scale analysis,
+  but also introduces challenges in data holding, retrieval, and quality control. In this frame,
+  I introduce an open-source Python package "GRINQ" that automates these steps through a unified
+  workflow for retrieving RINEX data across multiple data holdings and computing quality statistics.
+  A dedicated mirroring functionality for cloning selected data holdings, enabling users to maintain
+  synchronized copies of remote repositories, facilitating large-scale and reproducible analysis
+  of GNSS data.
+
 
