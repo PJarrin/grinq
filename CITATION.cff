@@ -5,7 +5,7 @@ message: "If you use GRINQ in your research, please cite this software."
 type: software
 
 authors:
-  - family-names: "Jarrin"
+  - family-names: "Jarrin Tamayo"
     given-names: "Paul"
 
 orcid: "https://orcid.org/0000-0001-9874-1330"
@@ -30,11 +30,8 @@ keywords:
 
 abstract: >
   The increase of GNSS observations worldwide creates new opportunities for large-scale analysis,
-  but also introduces challenges in data holding, retrieval, and quality control. In this frame,
-  I introduce an open-source Python package "GRINQ" that automates these steps through a unified
-  workflow for retrieving RINEX data across multiple data holdings and computing quality statistics.
-  A dedicated mirroring functionality for cloning selected data holdings, enabling users to maintain
-  synchronized copies of remote repositories, facilitating large-scale and reproducible analysis
-  of GNSS data.
-
-
+  but also introduces challenges in data holdings, retrieval, and quality control. In this frame,
+  this open-source Python package, GRINQ, automates these steps through a unified workflow for
+  retrieving RINEX data across multiple data repositories and computing quality statistics. A
+  dedicated mirroring functionality enables the cloning of selected data, allowing users to maintain
+  synchronized copies of remote repositories, facilitating the subsequent analysis of RINEX data.
