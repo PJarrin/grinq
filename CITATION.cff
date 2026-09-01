@@ -11,6 +11,7 @@ authors:
 orcid: "https://orcid.org/0000-0001-9874-1330"
 
 version: "0.0.1"
+doi: "10.5281/zenodo.22228489"
 date-released: "2026-08-27"
 
 repository-code: "https://github.com/PJarrin/grinq"
@@ -30,7 +31,7 @@ keywords:
 
 abstract: >
   The increase of GNSS observations worldwide creates new opportunities for large-scale analysis,
-  but also introduces challenges in data holdings, retrieval, and quality control. In this frame,
+  but also introduces challenges in data holdings, retrieval, and quality control. In this context,
   this open-source Python package, GRINQ, automates these steps through a unified workflow for
   retrieving RINEX data across multiple data repositories and computing quality statistics. A
   dedicated mirroring functionality enables the cloning of selected data, allowing users to maintain

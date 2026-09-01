@@ -209,8 +209,8 @@ See the [Change Log](CHANGELOG.md) for detailed updates.
 
 If you use GRINQ in your research, please cite the software:
 
-Jarrin, P. (2026). GRINQ: GNSS RINEX Ingestion and Quality Control. Zenodo.
-DOI: [XXXXXX]
+Jarrin, P. (2026). GRINQ v0.0.1: GNSS RINEX Ingestion and Quality Control. Computer 
+software. Zenodo. [doi: "10.5281/zenodo.22228489"](https://doi.org/10.5281/zenodo.22228489)
 
 
 ## Scientific applications
