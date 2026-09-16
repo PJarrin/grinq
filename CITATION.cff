@@ -7,8 +7,7 @@ type: software
 authors:
   - family-names: "Jarrin Tamayo"
     given-names: "Paul"
-
-orcid: "https://orcid.org/0000-0001-9874-1330"
+    orcid: "https://orcid.org/0000-0001-9874-1330"
 
 version: "0.0.1"
 doi: "10.5281/zenodo.22228489"
