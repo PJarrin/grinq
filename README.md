@@ -2,7 +2,8 @@
 # GRINQ - GNSS RINEX Ingestion and Quality Control
 
 [![Python](https://img.shields.io/badge/Python-3.11%2B-blue)](https://www.python.org/)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+![License](https://img.shields.io/badge/License-MIT-green)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22228489-blue)](https://doi.org/10.5281/zenodo.22228489)
 
 ---
 
@@ -67,12 +68,25 @@ Grinq wraps the Anubis' software and automates the computation of quality statis
 of RINEX metadata. [Anubis][web_anubis] must be installed in your OS
 by making a registration to retrieve the open access release
 
+- Make the ANUBIS binary executable:
 ```
 chmod +x anubis-3.11-lin-static-64b
-ln -s anubis-3.11-lin-static-64b /geodesy/bin/anubis
+```
 
+- Create a symbolic link named anubis in your /path/to/geodesy/bin directory:
+```
+ln -s anubis-3.11-lin-static-64b /path/to/geodesy/bin/anubis
+```
+
+- Replace /path/to/ with the path to the directory where the ANUBIS binary was created or downloaded.
 Then, set in your .bashrc or .zshrc:
-export PATH=/geodesy/bin:$PATH
+```
+export PATH=/path/to/geodesy/bin:$PATH
+```
+
+- Finally, after modifying the shell configuration, reload it:
+```
+source ~/.bashrc
 ```
 
 ## Usage
